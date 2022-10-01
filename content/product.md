@@ -1,7 +1,7 @@
 ---
 title: "作ったもの"
 date: 2022-10-01T15:43:21+09:00
-draft: true
+draft: false
 description: githubのリポジトリをベースに、作ったものを紹介しています。
 ---
 
@@ -16,7 +16,7 @@ description: githubのリポジトリをベースに、作ったものを紹介�
     
 - 左の写真は検出器を上から撮ったもの
 - 右の写真は検出器のモデルをGeant4で作って可視化したもの
-![](/img/product/detector.png)
+![detector](/img/product/detector.png)
 
 ## 物理解析ツール
 
@@ -65,7 +65,7 @@ description: githubのリポジトリをベースに、作ったものを紹介�
     - シングルボードコンピュータでsocket serverをホストする
     - オレオレプロトコルを介して安定化電源とシリアル通信する
 
-![](/img/product/nanopineo.png)
+![nanopineo](/img/product/nanopineo.png)
 
 > 📌 nano pi neoというraspberry piのパチモンを使った。これは、昨今の半導体不足でラズパイの入手性が極めて悪いためモノタロウでたまたま売っていたラズパイっぽいものをポスドクの方が衝動的にポチってしまったためである。nano pi neoは公式imageが古すぎて使い物にならなかったのでシングルボードコンピュータコミュニティが作っているOS (armbian) を使わせてもらった(ありがたい)。
 
@@ -82,7 +82,7 @@ description: githubのリポジトリをベースに、作ったものを紹介�
 - loggerを初めて導入した
 - DBに溜まったデータはgrafanaでこんな感じに見える
 
-![](/img/product/lowvoltage.png)
+![lowvoltage](/img/product/lowvoltage.png)
 
 
 ## 体重可視化アプリ (開発中)
