@@ -5,24 +5,32 @@ theme: PaperMod
 menu:
   main:
     - identifier: about
-      name: About
-      url: "https://github.com/hmdyt"
+      name: About this page
+      url: "https://github.com/hmdyt/hmdyt.github.io"
   
 params:
   ShowToc: true
   TocOpen: true
   ShowBreadCrumbs: false
+
   profileMode:
     enabled: true
     title: 濱田悠斗
     subtitle: 神戸大学大学院 理学研究科 物理学専攻 M1
     imageUrl: img/profile/myface.png
     buttons:
+      - name: 自己紹介
+        url: "selfintroduction"
       - name: つくったもの
         url: "product"
       - name: 学会とか
         url: "conference"
 
-  socialIcons: # optional
+  socialIcons: 
       - name: GitHub
         url: "https://github.com/hmdyt"
+  
+  editPost:
+    URL: "https://github.com/hmdyt/hmdyt.github.io/blob/main/content"
+    Text: "Suggest Changes"
+    appendFilePath: true
