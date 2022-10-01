@@ -1,0 +1,28 @@
+baseURL: http://example.org/
+languageCode: ja
+title: Hamada Yuto
+theme: PaperMod
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: "https://github.com/hmdyt"
+  
+params:
+  ShowToc: true
+  TocOpen: true
+  ShowBreadCrumbs: false
+  profileMode:
+    enabled: true
+    title: 濱田悠斗
+    subtitle: 神戸大学大学院 理学研究科 物理学専攻 M1
+    imageUrl: /img/profile/myface.png
+    buttons:
+      - name: つくったもの
+        url: "/product"
+      - name: 学会とか
+        url: "/conference"
+
+  socialIcons: # optional
+      - name: GitHub
+        url: "https://github.com/hmdyt"
