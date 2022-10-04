@@ -23,8 +23,21 @@ jobs:
 
       - name: Build
         run: hugo --minify
+      
+      - name: Deploy to ppwww
+        uses: mdallasanta/ssh-scp-deploy@v1.2.0
+        with:
+          local: './public/.'
+          remote: '~/www'
+          host: ${{secrets.PPWWW_IP}}
+          port: ${{secrets.PPWWW_PORT}}
+          user: ${{secrets.PPWWW_USER}} 
+          key: ${{secrets.PPWWW_PRIVATE_KEY}}
+          pre_upload: echo "This will be executed pre the upload!"
+          post_upload: echo "This will be executed after the upload!"
+          scp_options: -v
 
-      - name: Deploy
+      - name: Deploy to gh pages
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
